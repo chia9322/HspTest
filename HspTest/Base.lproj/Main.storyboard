@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FFY-8g-HrN">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="huninn.ttf">
+            <string>jf-openhuninn-1.1</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="HspTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-u5-Fra">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRz-oK-0f9">
+                                <rect key="frame" x="20" y="128" width="350" height="272"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即使無法事先準備，也樂於接受新挑戰。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0m-W8-pEp">
+                                        <rect key="frame" x="20" y="0.0" width="310" height="272"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="25"/>
+                                        <color key="textColor" name="darkGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp8-YI-NX9">
+                                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                        <color key="backgroundColor" name="darkGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="ecV-Da-6bv"/>
+                                            <constraint firstAttribute="width" secondItem="qp8-YI-NX9" secondAttribute="height" multiplier="1:1" id="fbR-XW-xcR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="beige"/>
+                                <constraints>
+                                    <constraint firstItem="U0m-W8-pEp" firstAttribute="top" secondItem="HRz-oK-0f9" secondAttribute="top" id="7dW-zt-z1n"/>
+                                    <constraint firstItem="U0m-W8-pEp" firstAttribute="leading" secondItem="HRz-oK-0f9" secondAttribute="leading" constant="20" id="TUD-LC-5RK"/>
+                                    <constraint firstAttribute="trailing" secondItem="U0m-W8-pEp" secondAttribute="trailing" constant="20" id="UMS-EA-wnN"/>
+                                    <constraint firstItem="qp8-YI-NX9" firstAttribute="top" secondItem="HRz-oK-0f9" secondAttribute="top" constant="10" id="c8D-oQ-eLv"/>
+                                    <constraint firstItem="qp8-YI-NX9" firstAttribute="leading" secondItem="HRz-oK-0f9" secondAttribute="leading" constant="10" id="dbY-at-3Lp"/>
+                                    <constraint firstAttribute="bottom" secondItem="U0m-W8-pEp" secondAttribute="bottom" id="yDg-B5-FI2"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Stq-yf-ZWX">
+                                <rect key="frame" x="20" y="480" width="350" height="290"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QVq-4n-vEc">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXw-Tr-td4">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sXw-Tr-td4" secondAttribute="height" multiplier="1:1" id="GPk-gT-Ean"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="4">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="270-WD-bpd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dto-lc-RG6">
+                                                <rect key="frame" x="60" y="0.0" width="290" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="完全符合">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIv-9o-HNz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Psz-V0-Jld"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zpc-Q8-Fa2">
+                                        <rect key="frame" x="0.0" y="60" width="350" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osB-KG-idf">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="osB-KG-idf" secondAttribute="height" multiplier="1:1" id="Lzh-EU-tdr"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="3">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijl-o9-1AH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ0-83-HDV">
+                                                <rect key="frame" x="60" y="0.0" width="290" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="幾乎符合">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXM-4E-UCh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="qfw-rL-8vc"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ol-c6-WuU">
+                                        <rect key="frame" x="0.0" y="120" width="350" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9an-CX-VtZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9an-CX-VtZ" secondAttribute="height" multiplier="1:1" id="lrZ-Py-D5t"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="2">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCM-oM-G5E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKH-7v-4B4">
+                                                <rect key="frame" x="60" y="0.0" width="290" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="有一點符合">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uy1-Qy-o8C"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="MiT-WL-Rks"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ain-GW-m1F">
+                                        <rect key="frame" x="0.0" y="180" width="350" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJO-5S-ew9">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nJO-5S-ew9" secondAttribute="height" multiplier="1:1" id="HyX-ak-XnA"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itn-aM-4VX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dks-3R-3Xm">
+                                                <rect key="frame" x="60" y="0.0" width="290" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="幾乎不符合">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1U5-x8-GW3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="9UD-Ro-6Ns"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PGM-gg-Pj9">
+                                        <rect key="frame" x="0.0" y="240" width="350" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-Fa-M26">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vy3-Fa-M26" secondAttribute="height" multiplier="1:1" id="qCx-dz-Hgy"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="0">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lkv-FQ-LQb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQ7-f8-bte">
+                                                <rect key="frame" x="60" y="0.0" width="290" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="完全不符合">
+                                                    <fontDescription key="titleFontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" name="lightGreen"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q5N-fu-Ex1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="UZp-Fo-Ml8"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jDz-u5-Fra" secondAttribute="trailing" id="0Tw-kL-CY6"/>
+                            <constraint firstItem="jDz-u5-Fra" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N9K-QZ-OMS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HRz-oK-0f9" secondAttribute="trailing" constant="20" id="Or4-js-aCw"/>
+                            <constraint firstItem="jDz-u5-Fra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qcb-43-nNJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Stq-yf-ZWX" secondAttribute="trailing" constant="20" id="Y1S-J2-ovT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Stq-yf-ZWX" secondAttribute="bottom" constant="40" id="e5O-FL-s1H"/>
+                            <constraint firstItem="Stq-yf-ZWX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iKi-FB-t9a"/>
+                            <constraint firstAttribute="bottom" secondItem="jDz-u5-Fra" secondAttribute="bottom" id="jbS-cR-3mr"/>
+                            <constraint firstItem="HRz-oK-0f9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m5e-md-iRY"/>
+                            <constraint firstItem="Stq-yf-ZWX" firstAttribute="top" secondItem="HRz-oK-0f9" secondAttribute="bottom" constant="80" id="nRH-Cs-FrZ"/>
+                            <constraint firstItem="HRz-oK-0f9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="y0b-uk-dJI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="v39-7h-PSR">
+                        <barButtonItem key="backBarButtonItem" title="Try Again" id="MQ8-oa-PGn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionLabel" destination="U0m-W8-pEp" id="oI5-mb-pEg"/>
+                        <outlet property="questionNumberLabel" destination="qp8-YI-NX9" id="yRY-Wg-4va"/>
+                        <segue destination="7N2-0V-Mmq" kind="show" identifier="showResult" destinationCreationSelector="showResult:" id="3z5-e6-LRO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263.0769230769231" y="86.729857819905206"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="6h4-c9-x9g">
+            <objects>
+                <viewController id="7N2-0V-Mmq" customClass="ResultViewController" customModule="HspTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jKr-48-wmM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result-background" translatesAutoresizingMaskIntoConstraints="NO" id="fmp-cg-o5K">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Dz4-ji-0hZ">
+                                <rect key="frame" x="40" y="214.66666666666663" width="310" height="415"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-bX-4s4">
+                                        <rect key="frame" x="122.33333333333334" y="0.0" width="65.666666666666657" height="25"/>
+                                        <fontDescription key="fontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="25"/>
+                                        <color key="textColor" name="beige"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21z-uD-NPY">
+                                        <rect key="frame" x="118.33333333333334" y="75.000000000000028" width="73.666666666666657" height="60"/>
+                                        <fontDescription key="fontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="60"/>
+                                        <color key="textColor" name="beige"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9F-F5-Ncm">
+                                        <rect key="frame" x="0.0" y="185" width="310" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高敏感族群" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L2k-Bi-EZA">
+                                                <rect key="frame" x="30" y="90" width="250" height="50"/>
+                                                <fontDescription key="fontDescription" name="jf-openhuninn-1.1" family="jf-openhuninn-1.1" pointSize="50"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="beige"/>
+                                        <constraints>
+                                            <constraint firstItem="L2k-Bi-EZA" firstAttribute="centerY" secondItem="A9F-F5-Ncm" secondAttribute="centerY" id="MvZ-Ee-Y79"/>
+                                            <constraint firstItem="L2k-Bi-EZA" firstAttribute="centerX" secondItem="A9F-F5-Ncm" secondAttribute="centerX" id="oAe-ra-b6r"/>
+                                            <constraint firstAttribute="height" constant="230" id="qfS-w1-W3l"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="A9F-F5-Ncm" firstAttribute="leading" secondItem="Dz4-ji-0hZ" secondAttribute="leadingMargin" id="tzw-Li-ciD"/>
+                                    <constraint firstItem="A9F-F5-Ncm" firstAttribute="trailing" secondItem="Dz4-ji-0hZ" secondAttribute="trailingMargin" id="ytp-U9-G02"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kfO-JI-003"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fmp-cg-o5K" firstAttribute="leading" secondItem="jKr-48-wmM" secondAttribute="leading" id="0Sd-ky-9z0"/>
+                            <constraint firstAttribute="bottom" secondItem="fmp-cg-o5K" secondAttribute="bottom" id="2Gf-Am-Mad"/>
+                            <constraint firstItem="fmp-cg-o5K" firstAttribute="top" secondItem="jKr-48-wmM" secondAttribute="top" id="F8L-Pn-6a3"/>
+                            <constraint firstItem="Dz4-ji-0hZ" firstAttribute="leading" secondItem="kfO-JI-003" secondAttribute="leading" constant="40" id="LUk-Hk-EGi"/>
+                            <constraint firstItem="Dz4-ji-0hZ" firstAttribute="centerY" secondItem="jKr-48-wmM" secondAttribute="centerY" id="Lfm-Pa-7AR"/>
+                            <constraint firstItem="kfO-JI-003" firstAttribute="trailing" secondItem="Dz4-ji-0hZ" secondAttribute="trailing" constant="40" id="MFQ-HC-mmW"/>
+                            <constraint firstAttribute="trailing" secondItem="fmp-cg-o5K" secondAttribute="trailing" id="fMB-Um-gEB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lBd-Dd-joq"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="L2k-Bi-EZA" id="tuw-HB-Dyj"/>
+                        <outlet property="scoreLabel" destination="21z-uD-NPY" id="7GO-5X-o6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbe-dH-a1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117" y="87"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pyh-9Q-mnI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FFY-8g-HrN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrow.backward" catalog="system" backIndicatorTransitionMaskImage="arrow.backward" id="o1m-vy-QCe">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S2G-xl-RLI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTu-YO-oxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.84615384615381" y="86.729857819905206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="background" width="1080" height="1920"/>
+        <image name="result-background" width="1080" height="1920"/>
+        <namedColor name="beige">
+            <color red="0.93725490196078431" green="0.89803921568627454" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGreen">
+            <color red="0.29803921568627451" green="0.3843137254901961" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGreen">
+            <color red="0.51764705882352946" green="0.59607843137254901" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
